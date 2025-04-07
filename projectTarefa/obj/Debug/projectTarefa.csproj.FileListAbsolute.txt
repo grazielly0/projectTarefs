@@ -1,0 +1,12 @@
+C:\Users\grazielly.salmeida1\source\repos\projectTarefa\projectTarefa\bin\Debug\projectTarefa.exe.config
+C:\Users\grazielly.salmeida1\source\repos\projectTarefa\projectTarefa\bin\Debug\projectTarefa.exe
+C:\Users\grazielly.salmeida1\source\repos\projectTarefa\projectTarefa\bin\Debug\projectTarefa.pdb
+C:\Users\grazielly.salmeida1\source\repos\projectTarefa\projectTarefa\obj\Debug\projectTarefa.csproj.AssemblyReference.cache
+C:\Users\grazielly.salmeida1\source\repos\projectTarefa\projectTarefa\obj\Debug\projectTarefa.csproj.SuggestedBindingRedirects.cache
+C:\Users\grazielly.salmeida1\source\repos\projectTarefa\projectTarefa\obj\Debug\projectTarefa.Form1.resources
+C:\Users\grazielly.salmeida1\source\repos\projectTarefa\projectTarefa\obj\Debug\projectTarefa.Properties.Resources.resources
+C:\Users\grazielly.salmeida1\source\repos\projectTarefa\projectTarefa\obj\Debug\projectTarefa.csproj.GenerateResource.cache
+C:\Users\grazielly.salmeida1\source\repos\projectTarefa\projectTarefa\obj\Debug\projectTarefa.csproj.CoreCompileInputs.cache
+C:\Users\grazielly.salmeida1\source\repos\projectTarefa\projectTarefa\obj\Debug\projectTarefa.exe
+C:\Users\grazielly.salmeida1\source\repos\projectTarefa\projectTarefa\obj\Debug\projectTarefa.pdb
+C:\Users\grazielly.salmeida1\source\repos\projectTarefa\projectTarefa\obj\Debug\projectTarefa.Cadastrar.resources
