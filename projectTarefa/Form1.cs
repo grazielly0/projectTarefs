@@ -143,5 +143,12 @@ namespace projectTarefa
         {
 
         }
+
+        private void criar_Click(object sender, EventArgs e)
+        {
+            Cadastrar cad= new Cadastrar();
+            cad.ShowDialog();
+
+        }//fim do criar 
     }
 }

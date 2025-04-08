@@ -116,12 +116,13 @@
             // 
             this.criar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(49)))), ((int)(((byte)(77)))));
             this.criar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.criar.Location = new System.Drawing.Point(579, 380);
+            this.criar.Location = new System.Drawing.Point(570, 373);
             this.criar.Name = "criar";
             this.criar.Size = new System.Drawing.Size(49, 43);
             this.criar.TabIndex = 21;
             this.criar.Text = "+";
             this.criar.UseVisualStyleBackColor = false;
+            this.criar.Click += new System.EventHandler(this.criar_Click);
             // 
             // label5
             // 

@@ -3,50 +3,53 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//using MySql.Data;
-//using MySql.Data.MySqlClient;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-
-// namespace projectTarefa
-//{
-
-    //class DAO
-    //{
-       // public MySqlConnection conexao;
-      //  public int[] codigo;
-        //public string[] titulo; 
-     //   public string[] descricao;
-      //  public string[] dataVencimento;
-      //  public string[] prioridade;
-      //  public int i;
-      //  public int contador;
-
-       // public DAO()
-       // {
-           // conexao = new MySqlConnection("server=localhost;Database=Tintcsharp;Uid=root;password=");
-           // try
-           // {
-               /// conexao.Open();//tentando conectar com o banco 
-
-           // }
-          //  catch (Exception erro)
-         //   //{
-         //       MessageBox.Show("Algo deu errado!\n\n\n" + erro);
-         //  / }
-        //}//fim do construtror
 
 
-       // public string Inserir(int codigo, string titulo, string descricao, int dataVencimento, string prioriade)
-       // {
-        //    string inserir = $"insert into tarefa( codigo, titulo, descricao, dataVencimento, prioridade) values(' {codigo}', '{titulo}', '{descricao}', '{dataVencimento}', '{prioriade}')";
-            //MySqlCommand sql = new MySqlCommand(inserir, conexao);
-          //  string resultado = sql.ExecuteNonQuery() + "Execultado";
-           // return resultado;
-       //}//fim do inserir
+namespace projectTarefa
+{
 
 
-       // public int ConsultarPorCodigo(int cod)
+    class DAO
+    {
+        public MySqlConnection conexao;
+        public int[] codigo;
+        public string[] titulo;
+        public string[] descricao;
+        public DateTime[] dataVencimento;
+        public string[] prioridade;
+        public int i;
+        public int contador;
+
+        public DAO()
+        {
+            conexao = new MySqlConnection("server=localhost;Database=Tintcsharp;Uid=root;password=;Convert Zero Datetime=True");
+            try
+            {
+                conexao.Open();//tentando conectar com o banco 
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Algo deu errado!\n\n\n" + erro);
+            }
+        }//fim do construtror
+
+
+        public string Inserir(int codigo, string titulo, string descricao, string dataVencimento, string prioriade)
+        {
+            string inserir = $"insert into tarefa( codigo, titulo, descricao, dataVencimento, prioridade) values(' {codigo}', '{titulo}', '{descricao}', '{dataVencimento}', '{prioriade}')";
+            MySqlCommand sql = new MySqlCommand(inserir, conexao);
+            string resultado = sql.ExecuteNonQuery() + "Execultado";
+            return resultado;
+        }
+    }//fim do inserir
+}
+
+
+       //public int ConsultarPorCodigo(int cod)
         ///{
 
             //instanciar os vetores 
