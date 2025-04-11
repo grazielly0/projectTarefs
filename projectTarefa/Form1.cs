@@ -35,7 +35,7 @@ namespace projectTarefa
 
 
             //criar 
-
+            ArredondarBotao(atualize1, 40);
             ArredondarBotao(criar, 40);
 
             // não fez
@@ -150,5 +150,16 @@ namespace projectTarefa
             cad.ShowDialog();
 
         }//fim do criar 
+
+       // private void atualize1_Click(object sender, EventArgs e)
+       // {
+           
+       // }
+
+        private void atualize1_Click_1(object sender, EventArgs e)
+        {
+            Atualizar cad = new Atualizar();
+            cad.ShowDialog();
+        }
     }
 }

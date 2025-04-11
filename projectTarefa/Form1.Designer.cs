@@ -46,6 +46,7 @@
             this.visualizar2 = new System.Windows.Forms.Button();
             this.visualizar4 = new System.Windows.Forms.Button();
             this.visualizar3 = new System.Windows.Forms.Button();
+            this.atualize1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -66,7 +67,7 @@
             this.caixa1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.caixa1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.caixa1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.caixa1.Location = new System.Drawing.Point(41, 145);
+            this.caixa1.Location = new System.Drawing.Point(247, 145);
             this.caixa1.Name = "caixa1";
             this.caixa1.Size = new System.Drawing.Size(587, 38);
             this.caixa1.TabIndex = 1;
@@ -78,7 +79,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(68)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Uighur", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label2.Location = new System.Drawing.Point(47, 151);
+            this.label2.Location = new System.Drawing.Point(253, 151);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 27);
             this.label2.TabIndex = 7;
@@ -92,7 +93,7 @@
             this.Visualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Visualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Visualizar.ForeColor = System.Drawing.Color.SteelBlue;
-            this.Visualizar.Location = new System.Drawing.Point(453, 152);
+            this.Visualizar.Location = new System.Drawing.Point(659, 152);
             this.Visualizar.Name = "Visualizar";
             this.Visualizar.Size = new System.Drawing.Size(80, 23);
             this.Visualizar.TabIndex = 11;
@@ -105,7 +106,7 @@
             this.naoFez1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.naoFez1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.naoFez1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.naoFez1.Location = new System.Drawing.Point(541, 152);
+            this.naoFez1.Location = new System.Drawing.Point(747, 152);
             this.naoFez1.Name = "naoFez1";
             this.naoFez1.Size = new System.Drawing.Size(75, 23);
             this.naoFez1.TabIndex = 16;
@@ -116,7 +117,7 @@
             // 
             this.criar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(49)))), ((int)(((byte)(77)))));
             this.criar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.criar.Location = new System.Drawing.Point(570, 373);
+            this.criar.Location = new System.Drawing.Point(1161, 373);
             this.criar.Name = "criar";
             this.criar.Size = new System.Drawing.Size(49, 43);
             this.criar.TabIndex = 21;
@@ -130,7 +131,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(68)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Uighur", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(47, 319);
+            this.label5.Location = new System.Drawing.Point(253, 319);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 27);
             this.label5.TabIndex = 27;
@@ -142,7 +143,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(68)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Uighur", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(47, 264);
+            this.label4.Location = new System.Drawing.Point(253, 264);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 27);
             this.label4.TabIndex = 26;
@@ -154,7 +155,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(45)))), ((int)(((byte)(68)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Uighur", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(47, 205);
+            this.label3.Location = new System.Drawing.Point(253, 205);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 27);
             this.label3.TabIndex = 25;
@@ -166,7 +167,7 @@
             this.caixa4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.caixa4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.caixa4.ForeColor = System.Drawing.Color.SteelBlue;
-            this.caixa4.Location = new System.Drawing.Point(41, 313);
+            this.caixa4.Location = new System.Drawing.Point(247, 313);
             this.caixa4.Mask = "\\";
             this.caixa4.Name = "caixa4";
             this.caixa4.Size = new System.Drawing.Size(587, 38);
@@ -178,7 +179,7 @@
             this.caixa3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.caixa3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.caixa3.ForeColor = System.Drawing.Color.SteelBlue;
-            this.caixa3.Location = new System.Drawing.Point(41, 258);
+            this.caixa3.Location = new System.Drawing.Point(247, 258);
             this.caixa3.Name = "caixa3";
             this.caixa3.Size = new System.Drawing.Size(587, 38);
             this.caixa3.TabIndex = 23;
@@ -190,7 +191,7 @@
             this.caixa2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.caixa2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.caixa2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.caixa2.Location = new System.Drawing.Point(41, 201);
+            this.caixa2.Location = new System.Drawing.Point(247, 201);
             this.caixa2.Name = "caixa2";
             this.caixa2.Size = new System.Drawing.Size(587, 38);
             this.caixa2.TabIndex = 22;
@@ -200,7 +201,7 @@
             // 
             this.naoFez4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.naoFez4.ForeColor = System.Drawing.Color.SteelBlue;
-            this.naoFez4.Location = new System.Drawing.Point(541, 322);
+            this.naoFez4.Location = new System.Drawing.Point(747, 322);
             this.naoFez4.Name = "naoFez4";
             this.naoFez4.Size = new System.Drawing.Size(75, 23);
             this.naoFez4.TabIndex = 33;
@@ -211,7 +212,7 @@
             // 
             this.naoFez3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.naoFez3.ForeColor = System.Drawing.Color.SteelBlue;
-            this.naoFez3.Location = new System.Drawing.Point(541, 210);
+            this.naoFez3.Location = new System.Drawing.Point(747, 210);
             this.naoFez3.Name = "naoFez3";
             this.naoFez3.Size = new System.Drawing.Size(75, 23);
             this.naoFez3.TabIndex = 32;
@@ -222,7 +223,7 @@
             // 
             this.naoFez2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.naoFez2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.naoFez2.Location = new System.Drawing.Point(544, 266);
+            this.naoFez2.Location = new System.Drawing.Point(750, 266);
             this.naoFez2.Name = "naoFez2";
             this.naoFez2.Size = new System.Drawing.Size(75, 23);
             this.naoFez2.TabIndex = 31;
@@ -236,7 +237,7 @@
             this.visualizar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.visualizar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visualizar2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.visualizar2.Location = new System.Drawing.Point(453, 267);
+            this.visualizar2.Location = new System.Drawing.Point(659, 267);
             this.visualizar2.Name = "visualizar2";
             this.visualizar2.Size = new System.Drawing.Size(80, 23);
             this.visualizar2.TabIndex = 30;
@@ -250,7 +251,7 @@
             this.visualizar4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.visualizar4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visualizar4.ForeColor = System.Drawing.Color.SteelBlue;
-            this.visualizar4.Location = new System.Drawing.Point(453, 322);
+            this.visualizar4.Location = new System.Drawing.Point(659, 322);
             this.visualizar4.Name = "visualizar4";
             this.visualizar4.Size = new System.Drawing.Size(80, 23);
             this.visualizar4.TabIndex = 29;
@@ -264,19 +265,31 @@
             this.visualizar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.visualizar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.visualizar3.ForeColor = System.Drawing.Color.SteelBlue;
-            this.visualizar3.Location = new System.Drawing.Point(453, 209);
+            this.visualizar3.Location = new System.Drawing.Point(659, 209);
             this.visualizar3.Name = "visualizar3";
             this.visualizar3.Size = new System.Drawing.Size(80, 23);
             this.visualizar3.TabIndex = 28;
             this.visualizar3.Text = "Visualizar";
             this.visualizar3.UseVisualStyleBackColor = false;
             // 
+            // atualize1
+            // 
+            this.atualize1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(54)))));
+            this.atualize1.Location = new System.Drawing.Point(934, 94);
+            this.atualize1.Name = "atualize1";
+            this.atualize1.Size = new System.Drawing.Size(102, 31);
+            this.atualize1.TabIndex = 34;
+            this.atualize1.Text = "Atualizar";
+            this.atualize1.UseVisualStyleBackColor = false;
+            this.atualize1.Click += new System.EventHandler(this.atualize1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(688, 450);
+            this.ClientSize = new System.Drawing.Size(1270, 450);
+            this.Controls.Add(this.atualize1);
             this.Controls.Add(this.naoFez4);
             this.Controls.Add(this.naoFez3);
             this.Controls.Add(this.naoFez2);
@@ -325,6 +338,7 @@
         private System.Windows.Forms.Button visualizar2;
         private System.Windows.Forms.Button visualizar4;
         private System.Windows.Forms.Button visualizar3;
+        private System.Windows.Forms.Button atualize1;
     }
 }
 

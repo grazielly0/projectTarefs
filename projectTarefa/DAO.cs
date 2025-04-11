@@ -45,128 +45,136 @@ namespace projectTarefa
             string resultado = sql.ExecuteNonQuery() + "Execultado";
             return resultado;
         }
-    }//fim do inserir
-}
-
-
-       //public int ConsultarPorCodigo(int cod)
-        ///{
-
+       public int ConsultarPorCodigo(int cod)
+       {
             //instanciar os vetores 
-          //  PreencherVetor();
-           // i = 0;
-           // while (i < QuantidadeDados())
-           // {
-              //  if (codigo[i] == cod)
-          //      {
-             //       return i;
-            //    }
-              //  i++;
-
-           // }//fim do while
-           // return -1;
+             PreencherVetor();
+            i = 0;
+            while (i < QuantidadeDados())
+            {
+            if (codigo[i] == cod)
+            {
+                   return i;
+            }
+                i++;
+            }//fim do while
+            return -1;
             //encerrar o processso da leitura
-       // }
+       }
 
-       // public string RetornarTitulo(int cod)
-       // {
-        ///    int posicao = ConsultarPorCodigo(cod);
-         //   if (posicao > -1)
-         //   {
-         //       return titulo[posicao];
-         //   }
-           // return "Código digitado inválido!";
-    //    }//
+       public string Retornartitulo(int cod)
+        {
+            int posicao = ConsultarPorCodigo(cod);
+           if (posicao > -1)
+           {
+               return titulo[posicao];
+           }
+            return "Código digitado inválido!";
+        }
 
-       // public string RetornarDescricao(int cod)
-     //   {
-       //     int posicao = ConsultarPorCodigo(cod);
-     //       if (posicao > -1)
-          //  {
-      //          return descricao[posicao];
-          //  }
-         ///   return "Código digitado inválido!";
-   //     }
+        public string Retornardescricao(int cod)
+        {
+           int posicao = ConsultarPorCodigo(cod);
 
-        //public string RetornardataVencimento(int cod)
-        //{
-         //   int posicao = ConsultarPorCodigo(cod);
-           // if (posicao > -1)
-        //    {
-          //      return dataVencimento[posicao];
-         //   }
-       //     return "Código digitado inválido!";
-      //  }
-        //public string RetornarPrioridade(int cod)
-        //{
-          //  int posicao = ConsultarPorCodigo(cod);
-         //   if (posicao > -1)
-           // {
-         //       return prioridade[posicao];
-         //   }
-       //     return "Código digitado inválido!";
-       // }
+           if (posicao > -1)
+            {
+                return descricao[posicao];
+            }
+            return "Código digitado inválido!";
+        }
 
-      //  public void PreencherVetor()
-       // {
-          //  string query = "select * from pessoa";
-            //instanciar os vetores 
+         public Object RetornardataVencimento(int cod)
+         {
+           int posicao = ConsultarPorCodigo(cod);
+          if (posicao > -1)
+         {
+              return dataVencimento[posicao];
+         }
+             return new DateTime();
+          }
 
-          ///  this.codigo = new int[100];
-        //    this.titulo = new string[100];
-          ///  this.descricao = new string[100];
-           // this.dataVencimento = new string[100];
-           /// this.prioridade = new string[100];
+        public DateTime TransformarData(Object dataVencimento)
+        {
+            string dt = dataVencimento.ToString();
+            string data = dt.Replace("-", "");
+            string dia = data.Substring(0, 4);
+            string mes = data.Substring(4, 2);
+            string ano = data.Substring(6, 2);
 
-            //prepara o comando para o banco 
+            return Convert.ToDateTime($"{dia}/{mes}/{ano}");
+        }//fim do método
 
-            //MySqlCommand sql = new MySqlCommand(query, conexao);
+        public string RetornarPrioridade(int cod)
+         {
+            int posicao = ConsultarPorCodigo(cod);
+            if (posicao > -1)
 
-            //chamar o leitor de banco de dados 
+            {
+                return prioridade[posicao];
+            }
+            return "Código digitado inválido!";
+          }
 
-          //  MySqlDataReader leitura = sql.ExecuteReader();
+        public void PreencherVetor()
+        {
+        string query = "select * from pessoa";
+            // instanciar os vetores           
 
-            //i = 0;
-         //   contador = 0; //
+        this.codigo = new int[100];
+        this.titulo = new string[100];
+        this.descricao = new string[100];
+        this.dataVencimento = new DateTime[100];
+        this.prioridade = new string[100];
+
+                ///repara o comando para o banco 
+
+            MySqlCommand sql = new MySqlCommand(query, conexao);
+
+                // chamar o leitor de banco de dados 
+
+             MySqlDataReader leitura = sql.ExecuteReader();
+
+                i = 0;
+                contador = 0; //
 
 
-           // while (leitura.Read())
-         //   {
-          //      codigo[i] = Convert.ToInt32(leitura["codigo"]);
-            //    titulo[i] = leitura["titulo"] + "";
-             //   descricao[i] = leitura["descricao"] + "";
-              //  dataVencimento[i] = leitura["dataVencimento"] + "";
-           //     prioridade[i] = leitura["prioridade"] + "";
-              //  i++;
-              //  contador++;
-           // }//fim do while
+        while (leitura.Read())
+        {
+          codigo[i] = Convert.ToInt32(leitura["codigo"]);
+          titulo[i] = leitura["titulo"] + "";
+          descricao[i] = leitura["descricao"] + "";
+          dataVencimento[i] = Convert.ToDateTime(leitura["dataVencimento"]); 
+          prioridade[i] = leitura["prioridade"] + "";
+            i++;
+            contador++;
+        }//fim do while
 
             //encerrar o processso da leitura
-            //leitura.Close();
+            leitura.Close();
 
-       // }//fim do metodo 
+        }//fim do metodo 
 
-      //  public int QuantidadeDados()
-       // {
-        //    return contador;
-       // }
+        public int QuantidadeDados()
+        {
+            return contador;
+        }
 
-        //public string Atualizar(int codigo, string campo, string dado)
-        //{
-        //    string query = $"update pessoa set {campo} = '{dado}' Where codigo = '{codigo}'";
-           // MySqlCommand sql = new MySqlCommand(query, conexao);
-         //   string resultado = sql.ExecuteNonQuery() + "Atualizado!";
-          //  return resultado;
+       public string Atualizar(int codigo, string campo, string dado)
+       {
+            string query = $"update tarefa set {campo} = '{dado}' Where codigo = '{codigo}'";
+           MySqlCommand sql = new MySqlCommand(query, conexao);
+           string resultado = sql.ExecuteNonQuery() + "Atualizado!";
+           return resultado; 
 
-       // }
+       }
 
-       // public string Excluir(int codigo)
-       // {
-         //   string query = $"delete from pessoa where codigo = '{codigo}'";
-         ///   MySqlCommand sql = new MySqlCommand(query, conexao);
-         //   string resultado = sql.ExecuteNonQuery() + "Deletado!";
-         //   return resultado;
-       // }
+        public string Excluir(int codigo)
+        {
+            string query = $"delete from pessoa where codigo = '{codigo}'";
+            MySqlCommand sql = new MySqlCommand(query, conexao);
+           string resultado = sql.ExecuteNonQuery() + "Deletado!";
+          return resultado;
+        }
 
-    // }//fim da DAO
-  //}//fim do projeto 
+     }//fim da DAO
+ }//fim do projeto 

@@ -175,7 +175,7 @@ namespace projectTarefa
 
         private void voltar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }// fim do volta 
 
         private void label7_Click_1(object sender, EventArgs e)
